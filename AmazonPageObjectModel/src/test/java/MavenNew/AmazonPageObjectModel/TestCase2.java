@@ -15,6 +15,7 @@ public class TestCase2 extends RespectiveActivitides{
 	LoginPage obj2=new LoginPage(driver);
 	
 	obj2.forgetMethod();
+	System.out.println("Hello");
 	
 	}
 }
