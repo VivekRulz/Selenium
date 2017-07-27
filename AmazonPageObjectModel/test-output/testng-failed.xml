@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="5" name="Failed suite [Suite]">
+  <parameter name="cxEmailAddress" value="vivekragu0@gmail.com"/>
+  <parameter name="cxPassword" value="ELEVEN11"/>
+  <test name="Test">
+    <parameter name="cxEmailAddress" value="vivekragu0@gmail.com"/>
+    <parameter name="cxPassword" value="ELEVEN11"/>
+    <classes>
+      <class name="MavenNew.AmazonPageObjectModel.TestCase1"/>
+      <class name="MavenNew.AmazonPageObjectModel.TestCase2"/>
+      <class name="MavenNew.AmazonPageObjectModel.TestCase3"/>
+      <class name="MavenNew.AmazonPageObjectModel.TestCase4"/>
+      <class name="MavenNew.AmazonPageObjectModel.TestCase5"/>
+      <class name="MavenNew.AmazonPageObjectModel.TestCase6"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <parameter name="cxEmailAddress" value="vivekragu0@gmail.com"/>
+    <parameter name="cxPassword" value="ELEVEN11"/>
+    <classes>
+      <class name="MavenNew.AmazonPageObjectModel.TestCase5">
+        <methods>
+          <include name="testCase5"/>
+        </methods>
+      </class> <!-- MavenNew.AmazonPageObjectModel.TestCase5 -->
+      <class name="MavenNew.AmazonPageObjectModel.TestCase2">
+        <methods>
+          <include name="beforeEveryTestCase"/>
+          <include name="testCase2"/>
+        </methods>
+      </class> <!-- MavenNew.AmazonPageObjectModel.TestCase2 -->
+      <class name="MavenNew.AmazonPageObjectModel.TestCase6">
+        <methods>
+          <include name="testCase6"/>
+        </methods>
+      </class> <!-- MavenNew.AmazonPageObjectModel.TestCase6 -->
+      <class name="MavenNew.AmazonPageObjectModel.TestCase3">
+        <methods>
+          <include name="testCase3"/>
+        </methods>
+      </class> <!-- MavenNew.AmazonPageObjectModel.TestCase3 -->
+      <class name="MavenNew.AmazonPageObjectModel.TestCase1">
+        <methods>
+          <include name="report"/>
+          <include name="afterEveryTestCase"/>
+          <include name="beforeEveryTestCase"/>
+        </methods>
+      </class> <!-- MavenNew.AmazonPageObjectModel.TestCase1 -->
+      <class name="MavenNew.AmazonPageObjectModel.TestCase4">
+        <methods>
+          <include name="testCase4"/>
+        </methods>
+      </class> <!-- MavenNew.AmazonPageObjectModel.TestCase4 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
